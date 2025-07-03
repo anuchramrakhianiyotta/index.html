@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting…</title>
+  </head>
+  <body onload="document.forms[0].submit()">
+    <form action="https://uatidp.yotta.com/realms/myaccount-social/broker/apple/endpoint" method="post">
+      <input type="hidden" name="state" value="{{STATE}}">
+      <input type="hidden" name="code" value="{{CODE}}">
+      <!-- optionally, add user and id_token if Apple sends -->
+    </form>
+  </body>
+</html>
